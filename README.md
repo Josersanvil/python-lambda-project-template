@@ -4,6 +4,19 @@ This project provides a template for a containerised Python application that is 
 
 It contains a CD pipeline that builds the application, pushes it to an ECR repository and updates the Lambda function.
 
+You must configure the following secrets and variables in your GitHub repository:
+
+Secrets:
+
+- AWS_IAM_ROLE_ARN: The ARN of an IAM role that has permission to push to the ECR repository and update the Lambda function
+- AWS_ECR_REGISTRY: The URL of the ECR registry
+
+Variables:
+
+- AWS_LAMBDA_FUNCTION_NAME: The name of the Lambda function
+- AWS_ECR_REPOSITORY: The name of the ECR repository
+- AWS_REGION: The AWS region where the ECR repository and Lambda function are located
+
 ## Continue in Terraform
 
 This project can be used with the following [Terraform](https://www.terraform.io/) configuration to deploy the Lambda function to AWS.
