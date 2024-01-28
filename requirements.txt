@@ -1,0 +1,4 @@
+beautifulsoup4==4.12.2
+s3fs==2023.10.0
+selenium==4.15.2
+polars==0.19.16
